@@ -7,8 +7,8 @@
  */
 public class Main {
     public static void main(String args[]){
-        CalcFactory calcFactory=new CalcFactory("*");
-        double result=calcFactory.getResult(2,2);
+        CalcFactory calcFactory=new CalcFactory("-");
+        double result=calcFactory.getResult(2,4);
         System.out.println(result);
     }
 }
