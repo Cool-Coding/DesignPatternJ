@@ -8,7 +8,7 @@
 public class Main {
     public static void main(String args[]){
         Operation operation=CalcFactory.getOperation("-");
-        double result=operation.calc(3,4);
+        double result=operation.calc(2,5);
         System.out.println(result);
     }
 }
