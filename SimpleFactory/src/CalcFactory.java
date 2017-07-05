@@ -2,12 +2,14 @@
  * Created by Administrator on 2017/7/4.
  */
 public class CalcFactory {
-    private Operation operation;
+
+    private CalcFactory() {}
 
     /**
      * @param ope 操作符号(+,-,*,/)
      */
-    public CalcFactory(String ope) {
+    public static Operation getOperation(String ope){
+        Operation operation=null;
         switch (ope) {
             case "+":
                 operation = new OperationAdd();
@@ -22,15 +24,7 @@ public class CalcFactory {
                 operation = new OperationDiv();
                 break;
         }
-    }
 
-    /**
-     *
-     * @param num1 操作符左边的数
-     * @param num2 操作符右边的数
-     * @return 返回计算的结果
-     */
-     public double getResult(double num1,double num2){
-         return operation.calc(num1,num2);
+        return operation;
     }
 }
