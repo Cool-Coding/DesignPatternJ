@@ -10,6 +10,8 @@ public class CashContext {
     /**
      *
      * @param strategyType 策略类型(正常，满减，折扣)
+     * 这里又结合使用了简单工厂模式，将各种策略类封闭在一个CashContext类中
+     * 让前端与业务逻辑区分开
      */
     public CashContext(StrategyType strategyType) {
         switch (strategyType){
