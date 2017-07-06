@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <output url="file:///production/AbstractFactory" />
+    <output url="file://$MODULE_DIR$/out/production/AbstractFactory" />
     <output-test url="file:///test/AbstractFactory" />
+    <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
